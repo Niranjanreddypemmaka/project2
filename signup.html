@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signup page </title>
+	<style type="text/css">
+		body{
+
+		font-family: arial,sans-serif;
+		background-image: url(log1.jpg);
+	   
+	    background-size: cover;
+	
+	}
+
+	.center{
+		text-align: center;
+		color: red;
+		 background-color: black;
+		width: 500px;
+       margin-top: 20px;
+		font-size: 40px;
+		height: 50px;
+		font-style: italic;
+		border-radius: 25px;
+	}
+	.form-div{
+		border: 3px solid red;
+		border-radius: 15px;
+		width: 700px;
+		text-align: center; 
+		margin-bottom:150px;
+		margin-right: 300px;
+		margin-left: 200px;
+	height: 700px;
+		
+	
+	}
+	.form-div{
+        color: black ;
+	}
+	input[type='text'],input[type='password']{
+		border: 1px solid blue;
+		border-radius: 15px;
+		width: 180px;
+		text-align: center;
+		height: 30px;
+		margin: 5px;
+		margin-bottom: 8px;
+		font-size: 20px;
+		outline: none;
+
+	}
+	#country{
+		border-radius: 5px;
+		color: blue;
+	}
+	.date{
+		border-radius: 5px;
+		color: green;
+	}
+	input[type='text']:focus ,input[type='password']:focus{
+            background-color: lightblue;
+            margin-left: 12px;
+	}
+       .cancel{
+       	 width: 80px;
+         padding: 5px 10px;
+         background-color: red;
+         margin: 5px;
+        border-radius: 15px;
+        color: white;
+        outline: none;
+        border: none;
+
+
+       }
+       .Signup{
+       	background-color: green;
+		text-align: center;
+		color: white;
+		border: none;
+		font-size: 20px;
+		padding: 5px 40px ;
+		border-radius: 15px;
+		margin: 10px 50px 20px 50px;
+		outline: none;
+
+         }
+        
+       button[type='Signup']:hover{
+		opacity: 0.9;
+		cursor: pointer;
+		box-shadow: 0 0 12px black;
+
+	}
+	 button[type='cancel']:hover{
+		opacity: 0.9;
+		cursor: pointer;
+		box-shadow: 0 0 12px black;
+	}
+	
+        
+	.psw {
+		margin-left: 150px;
+	}
+	a:link, a:visited {
+  
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	</style>
+</head>
+<body>
+	<div class="form-div">
+ <label for="First Name"><b>First Name :</b></label>
+ <br>
+<input type="text" placeholder="First Name"name="First Name" required>
+<br>
+<label for="Last Name "><b>Last Name :</b></label>
+<br>
+<input type="text" placeholder=" Last Name " name="Last Name " required>
+<br>
+ <label for="Phone Number"><b>Phone Number :</b></label>
+ <br>
+<input type="text" placeholder="Phone Number" name="phonenumber" required>
+<br>
+<div class="date"><form action=" /action_page"><b>Date of birth :</b><input type="date" name="date of birth "></form></div>
+<br>
+<label for="country"><b>Country :</b></label>
+    <select id="country" name="country">
+      
+      <option value="Australia">Australia</option>
+      <option value="Canada">Canada</option>
+      <option value="Usa">USA</option>
+      <option value="India">india</option>
+      <option value= "none">none</option>
+  </select>
+  <br>
+         <label for="Email"><b>Email :</b></label>
+         <br>
+               <input type="text" placeholder="Email ex @gmail.com" name="email"required></label>
+               <br>
+      <label for="fname"><b> Permanent address :</b></label>
+      <br>
+              <input type="text" id="fname" name="." placeholder=" parmanent address"></label>
+              <br>
+     <label for="psw"><b>Password :</b></label>
+     <br>
+               <input type="password" placeholder="Password" name="psw" required></label>
+               <br>
+   <label for="psw-conform"><b>Conform Password</b></label> 
+   <br>
+
+    <input type="password" placeholder="conform Password" name="psw-conform" required>
+    <br>   	
+               <p><b>Terms and conditions <a href="#" style="color:dodgerblue">Terms & Privacy</a></b></p>
+               <br>
+             
+               <button type="signup" onclick="document.getElementById('id01').style.display='none'" class="Signup"><a href="C:\Users\lenovo\Desktop\thankyou.html" target="blank">ok</a>
+</button>
+
+<button type="cancel" onclick="document.getElementById('id01').style.display='none'" class="cancel"><a href="C:\Users\lenovo\Desktop\fail.html" target="blank">Cancel</a>
+</button>
+
+
+    
+           </div>
+
+</body>
+</html>
